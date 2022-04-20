@@ -98,7 +98,8 @@ strong {
 }
 
 .contacts__icon {
-    fill: var(--icon-color);
+    vertical-align: middle;
+    fill: currentColor;
 }
 
 .contacts__icon:hover {
@@ -319,9 +320,9 @@ strong {
     height: 44px;
     border: none;
     border-radius: 50%;
-    background-color: var(--title-color);
-    display: inline-block;
     cursor: pointer;
+    background-color: var(--title-color);
+    color: var(--icon-color);
 }
 
 .team__btn:nth-child(4) {
@@ -329,46 +330,51 @@ strong {
 }
 
 .team__btn:hover {
-    background-color: var(--focus-color);
+   background-color: var(--focus-color);
+   color: var(--title-color);
 }
 
 .team__icon { 
-    fill: var(--icon-color);
+    display: block;
+    margin: 0 auto;
+    fill: currentColor;
 }
 
-.team__icon:hover {
-    fill: var(--title-color);
-}
 
 .clients__list{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .clients__item {
     margin-right: 30px;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
-}
-
-.clients__item:hover {
-    border: 1px solid var(--focus-color);
 }
 
 .clients__item:nth-child(6n) {
     margin-right: 0px;
 }
 
-.clients__icon {
-    display: block;
-    margin: 16px auto;
+.clients__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--icon-color);
     fill: var(--icon-color);
 }
 
-.clients__icon:hover {
+.clients__icon {
+    display: block;
+    margin: 16px auto;
+    fill: currentColor;
+}
+
+.clients__link:hover {
+    color: var(--focus-color);
     fill: var(--focus-color);
+    border: 1px solid var(--focus-color);
 }
 
 /*------------------- Footer --------------------*/
@@ -460,7 +466,6 @@ strong {
 
 .main__item button {
     display: block;
-
     border-radius: 4px;
     border: none;
     background-color: var(--btn-color);
@@ -482,6 +487,7 @@ strong {
 .main__item button:focus {
     background-color: var(--focus-color);
     color: var(--btn-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main__btn {
@@ -499,10 +505,14 @@ strong {
    margin-bottom: 30px;
 }
 
+.section__images-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
 .section__images-item figure {
     margin: 0;
     border: 1px solid var(--border-img-color);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .section__images-item:nth-child(3n) {
