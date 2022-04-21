@@ -512,7 +512,6 @@ strong {
 
 .section__images-item figure {
     margin: 0;
-    border: 1px solid var(--border-img-color);
 }
 
 .section__images-item:nth-child(3n) {
@@ -523,8 +522,15 @@ strong {
     margin-bottom: 0px;
 }
 
+.section__photo {
+    display: block;
+}
+
 .section__images-item figcaption {
     padding: 0 24px;
+    border-left: 1px solid var(--border-img-color);
+    border-right: 1px solid var(--border-img-color);
+    border-bottom: 1px solid  var(--border-img-color);
 }
 
 .section__images-item p {
